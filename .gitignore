@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# dont ignore 
+!Dependencies/SFML-2.5.1/**
