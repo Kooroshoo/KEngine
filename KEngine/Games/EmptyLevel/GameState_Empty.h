@@ -1,14 +1,14 @@
 #pragma once
 
-#include "Common.h"
-#include "GameState.h"
 #include <map>
 #include <memory>
 #include <deque>
 
-#include "EntityManager.h"
+#include "../../Engine/Common.h"
+#include "../../Engine/GameState.h"
+#include "../../Engine/EntityManager.h"
 
-class GameState_Menu : public GameState
+class GameState_Empty : public GameState
 {
 
 protected:
@@ -27,6 +27,6 @@ protected:
 
 public:
 
-    GameState_Menu(GameEngine & game);
+    GameState_Empty(GameEngine & game);
 
 };

@@ -1,10 +1,12 @@
-#include "GameState_Play.h"
-#include "Common.h"
-#include "Physics.h"
-#include "Assets.h"
-#include "GameEngine.h"
-#include "Components.h"
 #include <math.h>
+
+#include "GameState_Play.h"
+#include "../../Engine/Common.h"
+#include "../../Engine/Physics.h"
+#include "../../Engine/Assets.h"
+#include "../../Engine/GameEngine.h"
+#include "../../Engine/Components.h"
+
 
 GameState_Play::GameState_Play(GameEngine & game, const std::string & levelPath)
     : GameState(game)

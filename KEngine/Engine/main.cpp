@@ -4,6 +4,6 @@
 
 int main()
 {
-    GameEngine g("assets.txt");
+    GameEngine g("Games/ContentMenu/assets.txt");
     g.run();
 }

@@ -36,16 +36,19 @@
     <ClCompile Include="Engine\GameState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\GameState_Menu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine\GameState_Play.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Engine\Physics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Engine\Vec2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\ContentMenu\GameState_Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\Zelda\GameState_Play.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Games\EmptyLevel\GameState_Empty.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,387 +77,32 @@
     <ClInclude Include="Engine\GameState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\GameState_Menu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Engine\GameState_Play.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Engine\Physics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Engine\Vec2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Games\ContentMenu\GameState_Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\Zelda\GameState_Play.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Games\EmptyLevel\GameState_Empty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="assets.txt" />
-    <Text Include="level1.txt" />
-    <Text Include="level2.txt" />
-    <Text Include="level3.txt" />
+    <Text Include="Games\ContentMenu\assets.txt" />
+    <Text Include="Games\Zelda\level1.txt" />
+    <Text Include="Games\Zelda\level2.txt" />
+    <Text Include="Games\Zelda\level3.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Font Include="fonts\arial.ttf" />
-    <Font Include="fonts\mario.ttf" />
-    <Font Include="fonts\megaman.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="images\misc\explosion128.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\attack_down.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\attack_right.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\attack_up.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\get1.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\get2.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_arrow_right.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_bomb.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_bow.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_clock.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_compass.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_heart.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_meat.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_potion.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_rupee.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_rupee_blue.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_sword_right.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_sword_up.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\item_triforce.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\knight.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\octorok_right.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\octorok_up.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\run_down.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\run_right.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\run_up.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\stand_down.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\stand_right.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\stand_up.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\status_heart.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\tektite.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\tile_black.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\tile_water_ml.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\tile_water_mm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\tile_water_mr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\tile_water_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\tile_water_tm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\tile_water_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\waves_right.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\waves_up.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_bridge.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_bush.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_ground.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_knight.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_ladder.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_rock_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_rock_bm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_rock_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_rock_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_rock_tm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_rock_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_sand_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_sand_bm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_sand_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_sand_ml.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_sand_mm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_sand_mr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_sand_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_sand_tm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_sand_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_snail.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_stairs.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_temple_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_temple_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_temple_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_temple_tm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_templr_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_tree_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_tree_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_tree_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_tree_tm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_tree_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_water_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_water_bm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\brown\tile_water_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_bush.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_coast_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_coast_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_coast_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_coast_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_knight.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_ladder.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_raft.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_rock_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_rock_bm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_rock_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_rock_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_rock_tm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_rock_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_sand.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_sand_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_sand_bm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_sand_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_sand_ml.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_sand_mm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_sand_mr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_sand_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_sand_tm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_sand_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_snail.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_stairs.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_temple_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_temple_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_temple_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_temple_tm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_temple_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_tree_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_tree_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_tree_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_tree_tm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_tree_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_water_bl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_water_bm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_water_br.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_water_ml.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_water_mm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_water_mr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_water_tl.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_water_tm.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="images\tloz\green\tile_water_tr.png">
-      <Filter>Resource Files</Filter>
-    </Image>
+    <Font Include="Games\ContentMenu\fonts\arial.ttf" />
+    <Font Include="Games\ContentMenu\fonts\HyliaSerifBeta-Regular.ttf" />
+    <Font Include="Games\ContentMenu\fonts\mario.ttf" />
+    <Font Include="Games\ContentMenu\fonts\megaman.ttf" />
   </ItemGroup>
 </Project>

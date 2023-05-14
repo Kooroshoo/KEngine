@@ -1,7 +1,8 @@
 #include "GameEngine.h"
 #include "Assets.h"
-#include "GameState_Play.h"
-#include "GameState_Menu.h"
+
+// Try to remove this from engine code
+#include "../Games/ContentMenu/GameState_Menu.h"
 
 GameEngine::GameEngine(const std::string & path)
 {

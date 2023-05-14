@@ -1,12 +1,12 @@
 #pragma once
 
-#include "Common.h"
-#include "GameState.h"
 #include <map>
 #include <memory>
 #include <deque>
 
-#include "EntityManager.h"
+#include "../../Engine/Common.h"
+#include "../../Engine/GameState.h"
+#include "../../Engine/EntityManager.h"
 
 struct PlayerConfig 
 { 
