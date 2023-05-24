@@ -95,11 +95,10 @@
     <Text Include="Games\Zelda\level1.txt" />
     <Text Include="Games\Zelda\level2.txt" />
     <Text Include="Games\Zelda\level3.txt" />
+    <Text Include="Games\Zelda\assets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Font Include="Games\ContentMenu\fonts\arial.ttf" />
     <Font Include="Games\ContentMenu\fonts\HyliaSerifBeta-Regular.ttf" />
-    <Font Include="Games\ContentMenu\fonts\mario.ttf" />
-    <Font Include="Games\ContentMenu\fonts\megaman.ttf" />
+    <Font Include="Games\Zelda\fonts\arial.ttf" />
   </ItemGroup>
 </Project>

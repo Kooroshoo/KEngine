@@ -184,15 +184,14 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Games\ContentMenu\assets.txt" />
+    <Text Include="Games\Zelda\assets.txt" />
     <Text Include="Games\Zelda\level1.txt" />
     <Text Include="Games\Zelda\level2.txt" />
     <Text Include="Games\Zelda\level3.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Font Include="Games\ContentMenu\fonts\arial.ttf" />
     <Font Include="Games\ContentMenu\fonts\HyliaSerifBeta-Regular.ttf" />
-    <Font Include="Games\ContentMenu\fonts\mario.ttf" />
-    <Font Include="Games\ContentMenu\fonts\megaman.ttf" />
+    <Font Include="Games\Zelda\fonts\arial.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

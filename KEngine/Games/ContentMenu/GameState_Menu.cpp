@@ -73,6 +73,7 @@ void GameState_Menu::sUserInput()
                     }
                     else
                     {
+                        m_game.addAssets("Games/Zelda/assets.txt");
                         m_game.pushState(std::make_shared<GameState_Play>(m_game, m_levelPaths[m_selectedMenuIndex]));
                     }
                     break; 
