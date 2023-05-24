@@ -1,6 +1,5 @@
 #pragma once
 
-#include "Common.h"
 #include "Entity.h"
 
 struct Intersect { bool result; Vec2 pos; };

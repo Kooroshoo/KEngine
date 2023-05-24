@@ -59,9 +59,6 @@
     <ClInclude Include="Engine\Assets.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Common.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Engine\Components.h">
       <Filter>Header Files</Filter>
     </ClInclude>

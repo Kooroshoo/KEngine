@@ -1,5 +1,4 @@
 #include "GameState.h"
-#include "GameEngine.h"
 
 GameState::GameState(GameEngine & game)
     : m_game(game)

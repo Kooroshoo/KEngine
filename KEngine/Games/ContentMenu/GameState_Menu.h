@@ -4,7 +4,6 @@
 #include <memory>
 #include <deque>
 
-#include "../../Engine/Common.h"
 #include "../../Engine/GameState.h"
 #include "../../Engine/EntityManager.h"
 

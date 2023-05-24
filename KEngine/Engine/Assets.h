@@ -1,6 +1,7 @@
 #pragma once
 
-#include "Common.h"
+#include <fstream>
+#include <iostream>
 #include "Animation.h"
 
 class Assets

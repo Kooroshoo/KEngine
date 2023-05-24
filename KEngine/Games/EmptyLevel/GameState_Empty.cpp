@@ -1,7 +1,6 @@
 #include "GameState_Empty.h"
 
 #include "../../Games/Zelda/GameState_Play.h"
-#include "../../Engine/Common.h"
 #include "../../Engine/Assets.h"
 #include "../../Engine/GameEngine.h"
 #include "../../Engine/Components.h"
