@@ -18,14 +18,16 @@ protected:
     size_t                                  m_popStates = 0;
     bool                                    m_running = true;
 
-    void init(const std::string & path);
+    
     void update();
 
     
 
 public:
     
-    GameEngine(const std::string & path);
+    GameEngine();
+
+    void init(sf::VideoMode resolution, const std::string& title, const int fps, std::shared_ptr<GameState> state);
 
     void pushState(std::shared_ptr<GameState> state);
     void popState();
@@ -36,5 +38,6 @@ public:
     sf::RenderWindow & window();
     bool isRunning();
 
+    void addAssets(const std::string& path);
     const Assets & getAssets() const;
 };

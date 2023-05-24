@@ -1,22 +1,16 @@
 #include "GameEngine.h"
 #include "Assets.h"
 
-// Try to remove this from engine code
-#include "../Games/ContentMenu/GameState_Menu.h"
-
-GameEngine::GameEngine(const std::string & path)
+GameEngine::GameEngine()
 {
-    init(path);
 }
 
-void GameEngine::init(const std::string & path)
+void GameEngine::init(sf::VideoMode resolution, const std::string& title, const int fps, std::shared_ptr<GameState> state)
 {
-    m_assets.loadFromFile(path);
+    m_window.create(resolution, title);
+    m_window.setFramerateLimit(fps);
 
-    m_window.create(sf::VideoMode(1280, 768), "Game");
-    m_window.setFramerateLimit(60);
-
-    pushState(std::make_shared<GameState_Menu>(*this));
+    pushState(state);
 }
 
 bool GameEngine::isRunning()
@@ -79,6 +73,11 @@ void GameEngine::update()
 void GameEngine::quit()
 {
     m_running = false;
+}
+
+void GameEngine::addAssets(const std::string& path) 
+{
+    m_assets.loadFromFile(path);
 }
 
 const Assets & GameEngine::getAssets() const
